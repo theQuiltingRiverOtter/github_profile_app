@@ -36,12 +36,14 @@ function App() {
   }
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setShowModal(true)
+
     try {
+      setShowModal(true)
       const response = await axios.get(`https://api.github.com/users/${searchLogin}`)
       const newObj = { login: response.data.login, avatar: response.data.avatar_url, url: response.data.html_url, followers: response.data.followers, following: response.data.following, reposAmount: response.data.public_repos, name: response.data.name, bio: response.data.bio }
       setUserData(newObj)
     } catch (err) {
+      setShowModal(false)
       console.log("Something went wrong")
       console.log(err)
     }
