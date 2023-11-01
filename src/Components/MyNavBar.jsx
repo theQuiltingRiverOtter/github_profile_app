@@ -25,10 +25,8 @@ function MyNavBar({ getUserData, handleChange, handleSubmit }) {
         <option value="katme2006">Kate Fischer</option>
         <option value="mitch1625">Eric Mitchell</option>
         <option value="Mlew512">Matthew Lewis</option>
-        <option value="calebdavis114">Caleb Davis</option>
         <option value="jminchew97">Joshua Minchew</option>
         <option value="CustomDesignBuildStudios">Michael Termotto</option>
-        <option value="Blackrebelradio">Frank Gary Jr.</option>
         <option value="Jkim1122">Josh Kim</option>
         <option value="Claireincode">Claireese Underwood</option>
         <option value="Antq20">Anthony Quinones</option>
